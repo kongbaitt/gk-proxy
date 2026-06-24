@@ -227,7 +227,8 @@ function main(config) {
       name: proxyGroupName,
       type: "select",
       proxies: serverAutoGroupNames.length
-        ? [...serverAutoGroupNames, ...proxyNames]
+        // 保留 DIRECT 选项，手动选择后 MATCH 兜底的国外流量也会直连。
+        ? [...serverAutoGroupNames, ...proxyNames, "DIRECT"]
         : ["DIRECT"]
     },
     ...serverAutoGroups,
