@@ -2,7 +2,7 @@
 // 目标：尽量复刻 mihomo.yaml 的核心行为，并兼容 proxy-providers / proxies 两种输入。
 
 const HEALTHCHECK_URL = 'https://dns.google/generate_204';
-const GITHUB_RAW = 'https://raw.githubusercontent.com/kongbaitt/proxy/main';
+const GITHUB_RAW = 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main';
 
 // 直连伪节点：保留 YAML 中的 IP 优先级直连策略。
 const DIRECT_PROXIES = [

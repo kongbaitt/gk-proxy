@@ -27,7 +27,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'ipcidr',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/private_ip.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/private_ip.mrs',
     path: './rules/private_ip.mrs',
   },
   'AWAvenue-Ads': {
@@ -45,7 +45,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'domain',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/private.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/private.mrs',
     path: './rules/private.mrs',
   },
   proxy_domain: {
@@ -54,7 +54,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'domain',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/proxy_domain.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/proxy_domain.mrs',
     path: './rules/proxy_domain.mrs',
   },
   direct_domain: {
@@ -63,7 +63,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'domain',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/direct_domain.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/direct_domain.mrs',
     path: './rules/direct_domain.mrs',
   },
   proxy: {
@@ -72,7 +72,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'domain',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/proxy.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/proxy.mrs',
     path: './rules/proxy.mrs',
   },
   cn: {
@@ -81,7 +81,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'domain',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/cn_domain.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/cn_domain.mrs',
     path: './rules/cn.mrs',
   },
   proxy_ip: {
@@ -90,7 +90,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'ipcidr',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/proxy_ip.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/proxy_ip.mrs',
     path: './rules/proxy_ip.mrs',
   },
   direct_ip: {
@@ -99,7 +99,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'ipcidr',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/direct_ip.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/direct_ip.mrs',
     path: './rules/direct_ip.mrs',
   },
   cn_ip: {
@@ -108,7 +108,7 @@ const RULE_PROVIDERS = {
     proxy: '代理连接',
     behavior: 'ipcidr',
     format: 'mrs',
-    url: 'https://raw.githubusercontent.com/kongbaitt/proxy/main/rules/mrs/cn_ip.mrs',
+    url: 'https://raw.githubusercontent.com/kongbaitt/gk-proxy/main/rules/mrs/cn_ip.mrs',
     path: './rules/cn_ip.mrs',
   },
 };
