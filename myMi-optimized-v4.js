@@ -150,7 +150,7 @@ function main(config) {
     nameserver: [
       "https://dns.alidns.com/dns-query",
       "https://doh.pub/dns-query",
-      "https://dns.google/dns-query"
+      "https://dns.google/dns-query#PROXY"
     ],
 
     // DNS 分流策略：显式声明各类域名所用 DNS，防止将来误改 nameserver 导致泄漏
@@ -164,16 +164,16 @@ function main(config) {
       "geosite:private": [
         "system"
       ],
-      // 国外域名走国外 DNS，防 DNS 污染/泄露
+      // 国外域名走国外 DNS，通过代理连接防止 DNS 泄露
       "geosite:geolocation-!cn": [
-        "https://1.1.1.1/dns-query",
-        "https://8.8.8.8/dns-query"
+        "https://1.1.1.1/dns-query#PROXY",
+        "https://8.8.8.8/dns-query#PROXY"
       ]
     },
 
     fallback: [
-      "https://1.1.1.1/dns-query",
-      "https://8.8.8.8/dns-query"
+      "https://1.1.1.1/dns-query#PROXY",
+      "https://8.8.8.8/dns-query#PROXY"
     ],
 
     "fallback-filter": {
