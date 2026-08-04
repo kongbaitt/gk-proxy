@@ -49,6 +49,9 @@ function main(config) {
   const serverAutoGroups = buildServerAutoGroups(oldProxies, autoGroupPrefix);
   const serverAutoGroupNames = serverAutoGroups.map(group => group.name);
 
+  // 面板控制接口：手机 App 面板需要此端口才能连接核心
+  config["external-controller"] = config["external-controller"] || "127.0.0.1:9090";
+
   // 基础设置
   config.mode = "rule";
   config["allow-lan"] = true;
